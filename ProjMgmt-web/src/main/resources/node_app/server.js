@@ -22,6 +22,15 @@ var record = {
     'desc' : 'test description'
 };
 
+var idObj = {
+    'counter' : 0,
+    'getID' : function(){
+        this.counter += 1;
+        return this.counter;
+    }
+
+}
+
 var getDummyResponse = function(res){
     db.open(function(err, client){
 
@@ -38,6 +47,7 @@ var getDummyResponse = function(res){
 
         client.createCollection("t1", function(err, col) {
              client.collection("t1", function(err, col) {
+                record._id = idObj.getID();
                 col.insert(record, function() {
                     res.send('Record inserted successfully.'+JSON.stringify(record));
                 });
