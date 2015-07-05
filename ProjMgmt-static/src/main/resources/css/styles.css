@@ -1,0 +1,100 @@
+body{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#main_nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+
+.highlight{
+    background-color:yellow;
+    font-weight:bold;
+}
+
+a:HOVER{
+    color:green;
+}
+
+div h2{
+   border:1px solid;
+   border-radius:5px;
+   color:purple;
+   padding:2px 2px 2px 1px;
+   margin-left:auto;
+   font-size: 0.85em;
+   background-color:gray;
+   text-align:center;
+}
+
+.maindiv_info_para{
+    background-color:#FFFFE0;
+    font-family:Arial;
+}
+
+.span_info{
+    font-size: 10px;
+    font-weight: bold;
+    color:#B22222;
+}
+
+.num_digit2 {
+   width:30px;
+}
+.num_digit10 {
+   width:80px;
+}
+
+.num_digit4{
+ width:50px;
+}
+
+.done_button {
+    text-align:center;
+    font-width:bold;
+    font-family:Arial;
+    font-size:10px;
+    background-color:yellow;
+    box-shadow: 5px 5px 3px purple;
+}
+
+.success_msg{
+    text-align:left;
+    font-family:Arial;
+    font-size:10px;
+    color:blue;
+    font-weight:bold;
+    padding: 0px 0px 0px 10px;
+}
+.error_msg{
+    text-align:left;
+    font-family:Arial;
+    font-size:10px;
+    color:red;
+    font-weight:bold;
+    padding: 0px 0px 0px 10px;
+}

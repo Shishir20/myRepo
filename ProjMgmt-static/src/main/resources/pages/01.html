@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Test title</title>
+    <link rel="stylesheet" href="../css/styles.css" media="all">
+    <!--<link rel="stylesheet" href="https://www.dropbox.com/sh/f8evwog7q105lxb/AADVit-XyoduFA8wIRtbeCQoa/css/styles.css"-->
+          <!--media="all">-->
+
+    <script src="../js/jquery-2.1.3.js"></script>
+
+    <!--<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>-->
+
+    <script src="../js/scripts.js"></script>
+
+    <!--<script src="https://www.dropbox.com/sh/f8evwog7q105lxb/AAB20hoBv4zlFhVCf1L_pWRAa/js/scripts.js"></script>-->
+
+</head>
+
+<body>
+<input type="hidden" id="otp_resp_code" value="" />
+
+<div id="header">
+    <h1>Med+</h1>
+</div>
+
+<div id="main_nav">
+    <a id="nav_a_home" class="main_nav_grp_cls" href="#">Home</a><br>
+    <a id="nav_a_regscreen" class="main_nav_grp_cls" href="#">RegisterScreen</a><br>
+    <a id="nav_a_otpval" class="main_nav_grp_cls"  href="#">OTPValidation</a><br>
+    <a id="nav_a_otpsuc" class="main_nav_grp_cls" href="#">OTPSuccess</a><br>
+    <a id="nav_a_regselr" class="main_nav_grp_cls" href="#">RegisterSeller</a><br>
+    <a id="nav_a_regbuyr" class="main_nav_grp_cls" href="#">RegisterBuyer</a><br>
+    <a id="nav_a_selrhome" class="main_nav_grp_cls" href="#">SellerHome</a><br>
+    <a id="nav_a_buyrhome" class="main_nav_grp_cls" href="#">BuyerHome</a><br>
+</div>
+
+<div id="section">
+    <div id="main_div_home" class="main_div_grp_class">
+    <h2>Home</h2>
+        <p class="maindiv_info_para">
+            Please enter phone number with country code.
+        </p>
+        <form method="POST" action="#" name="abc">
+                <label><span class="span_info">Country Code: </span><input type="number" class="num_digit2" step="0.01" placeholder="91" pattern="[0-9]*" ></label>
+                <input type="tel"  class="num_digit10" placeholder="xxxxxxxxxx"><span class="span_info">Enter Phone Number</span>
+                <input type="button" value="done" class="done_button" />
+        </form>
+    </div>
+
+    <div id="main_div_regscreen" class="main_div_grp_class">
+        <h2>Register</h2>
+        <p class="maindiv_info_para">
+            This is Registration screen.
+        </p>
+    </div>
+
+    <div id="main_div_otpval" class="main_div_grp_class">
+        <h2>OTP Validation</h2>
+        <p class="maindiv_info_para">
+            This is OTP validation screen.
+        </p>
+        <span class="mob_otp_txt span_info"></span>
+
+        <p>
+            <input type="number" name="otp_code_val" class="num_digit4" step="0.01" placeholder="XXXX" pattern="[0-9]*">
+            <input type="button" value="next" class="done_button" />
+            <span id="otp_err_msg"></span>
+        </p>
+
+    </div>
+
+    <div id="main_div_otpsuc" class="main_div_grp_class">
+        <h2>OTP Success</h2>
+        <p class="maindiv_info_para">
+            This is OTP Success screen.
+        </p>
+    </div>
+
+    <div id="main_div_regselr" class="main_div_grp_class">
+        <h2>Register Seller</h2>
+        <p class="maindiv_info_para">
+            This is Register seller screen.
+        </p>
+    </div>
+
+    <div id="main_div_regbuyr" class="main_div_grp_class">
+        <h2>Register Buyer</h2>
+        <p class="maindiv_info_para">
+            This is Register buyer screen.
+        </p>
+    </div>
+
+    <div id="main_div_selrhome" class="main_div_grp_class">
+        <h2>Seller Home Screen</h2>
+        <p class="maindiv_info_para">
+            This is Seller Home screen.
+        </p>
+    </div>
+
+    <div id="main_div_buyrhome" class="main_div_grp_class">
+        <h2>Buyer Home Screen</h2>
+        <p class="maindiv_info_para">
+            This is Buyer Home screen.
+        </p>
+    </div>
+</div>
+
+<div id="footer">
+    Copyright © medforus.com
+</div>
+
+</body>
+</html>
