@@ -23,13 +23,13 @@ var record = {
 };
 
 var idObj = {
-    'counter' : 0,
+    'counter' : new Date().getTime(),
     'getID' : function(){
         this.counter += 1;
         return this.counter;
     }
 
-}
+};
 
 var getDummyResponse = function(res){
     db.open(function(err, client){
