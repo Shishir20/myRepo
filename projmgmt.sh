@@ -1,15 +1,15 @@
-MEDPLUS_HOME=/Users/sachin/Documents/workspace/SachinConnectAppsWS/MedPlusRoot/MedPlus-static
+PROJMGMT_HOME=/Users/sachin/Documents/workspace/MyProj/ProjMgmt-static
 
 DOC_ROOT=/Library/WebServer/Documents
-MEDPLUS_WEB_FOLDER_NAME=medplusweb
+PROJMGMT_WEB_FOLDER_NAME=projmgmtweb
 
-cd $MEDPLUS_HOME
+cd $PROJMGMT_HOME
 /Users/sachin/Softwares/apache-maven-3.2.1/bin/mvn clean install -o
 
-cd $DOC_ROOT'/'$MEDPLUS_WEB_FOLDER_NAME
-rm -rf medplus.zip
+cd $DOC_ROOT'/'$PROJMGMT_WEB_FOLDER_NAME
+rm -rf projmgmt.zip
 
-cp $MEDPLUS_HOME'/target/MedPlus.zip' $DOC_ROOT'/'$MEDPLUS_WEB_FOLDER_NAME
-unzip -o medplus.zip
+cp $PROJMGMT_HOME'/target/ProjMgmt.zip' $DOC_ROOT'/'$PROJMGMT_WEB_FOLDER_NAME
+unzip -o projmgmt.zip
 
 echo 'Done.....Done'
