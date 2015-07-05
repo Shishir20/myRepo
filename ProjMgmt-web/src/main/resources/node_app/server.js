@@ -22,14 +22,14 @@ var record = {
     'desc' : 'test description'
 };
 
-var idObj = {
-    'counter' : new Date().getTime(),
-    'getID' : function(){
-        this.counter += 1;
-        return this.counter;
-    }
 
-};
+var idVal = function(){
+    var counter = new Date().getTime();
+
+    return function(){
+        return counter += 1;
+    };
+}();
 
 var getDummyResponse = function(res){
     db.open(function(err, client){
@@ -47,7 +47,7 @@ var getDummyResponse = function(res){
 
         client.createCollection("t1", function(err, col) {
              client.collection("t1", function(err, col) {
-                record._id = idObj.getID();
+                record._id = idVal();
                 col.insert(record, function() {
                     res.send('Record inserted successfully.'+JSON.stringify(record));
                 });
