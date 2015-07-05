@@ -23,13 +23,13 @@ var record = {
 };
 
 
-var idVal = function(){
-    var counter = new Date().getTime();
+var idVal = function(val){
+    var counter = val;
 
     return function(){
         return counter += 1;
     };
-}();
+}(new Date().getTime());
 
 var getDummyResponse = function(res){
     db.open(function(err, client){
